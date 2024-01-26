@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roulette Bet Page</title>
+</head>
+<body>
+
+<h2>Roulette Bet Page</h2>
+<h2> Player make Your Bets</h2>
+
+<form method='get' action='/Roulette/MakeBet'>
+    <label for='selectedBet'>Choose a Roulette Bet:</label>
+    <select id='selectedBet' name='selectedBet' required>
+        <option value=0>Red</option>
+        <option value=1>Black</option>
+        <option value=2>Even</option>
+        <option value=3>FirstHalfBet</option>
+        <option value=4>SecondHalfBet</option>
+        <option value=5>FirstIntervalBet</option>
+        <option value=6>SecondIntervalBet</option>
+        <option value=7>ThirdIntervalBet</option>
+        <option value=8>Mod3Equals0</option>
+        <option value=9>Mod3Equals1</option>
+        <option value=10>Mod3Equals2</option>
+
+    </select>
+
+    <br>
+
+    <label for='betAmount'>Enter Bet Amount:</label>
+    <input style='padding: 5px' id='betAmount' name='betAmount' required>
+    
+    <br>
+    <label for='userName'>Enter UserName</label>
+    <input id='userName' name="userName" required>
+            
+    <br>
+    
+    <button style='background-color:red; border: none; padding: 5px; color: white; border-radius: 3px;' type='submit'>Submit</button>
+</form>
+
+</body>
+</html>
